@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TripWise | AI Travel Planner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="/static/images/logo.svg">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="app-layout">
+    
+    <!-- LEFT SIDEBAR: Chats -->
+    <aside class="sidebar-chats">
+      <!-- Project Brand Logo & Title -->
+      <div class="sidebar-brand-row">
+        <div class="brand-logo-wrap">
+          <img src="/static/images/logo.svg" alt="TripWise Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-text-col">
+          <div class="brand-title-wrap">
+            <span class="brand-name-main">Trip</span><span class="brand-name-accent">Wise</span>
+            <span class="brand-badge-ai">AI</span>
+          </div>
+          <span class="brand-tagline">NLP Travel Planner</span>
+        </div>
+      </div>
+
+      <div class="chats-header">
+        <div class="chats-title-group">
+          <h2>Chats</h2>
+          <span class="chat-counter-badge" id="chatCountBadge">0</span>
+        </div>
+        <button class="btn-new-chat-top" onclick="startNewChat()">
+          New Chat
+        </button>
+      </div>
+
+      <div class="search-box-wrapper">
+        <div class="search-input-container">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="chatSearchInput" placeholder="Search..." oninput="filterChatHistory(this.value)">
+          <span class="kbd-shortcut"><i class="fa-solid fa-command"></i> 1</span>
+        </div>
+      </div>
+
+      <div class="chat-tab-nav">
+        <button class="chat-tab active" id="tabAllChats" onclick="switchChatListTab('all')">All</button>
+        <button class="chat-tab" id="tabTrips" onclick="switchChatListTab('trips')">Trips</button>
+      </div>
+
+      <!-- Chat History Stream -->
+      <div class="chat-history-list" id="chatHistoryList">
+        <!-- Empty State -->
+        <div class="history-empty-state" id="emptyHistoryState">
+          <div class="empty-icon-circle">
+            <i class="fa-regular fa-comment-dots"></i>
+            <span class="purple-dot"></span>
+          </div>
+          <p class="empty-text">No Chat History</p>
+          <button class="btn-new-chat-outline" onclick="startNewChat()">
+            <i class="fa-solid fa-plus"></i> New Chat
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- CENTER CANVAS: Main Chat & Prompt Cards -->
+    <main class="main-content-canvas">
+      
+      <!-- Top Navigation Bar -->
+      <header class="top-nav-bar">
+        <div class="nav-left">
+          <div class="nav-brand-breadcrumb">
+            <img src="/static/images/logo.svg" alt="TripWise" class="nav-brand-logo">
+            <span class="nav-brand-name">Trip<span class="text-orange">Wise</span></span>
+            <span class="nav-crumb-sep">/</span>
+            <h1 class="chat-session-title" id="chatSessionTitle">New Chat</h1>
+          </div>
+        </div>
+        <div class="nav-right">
+          <button class="nav-pill-btn" onclick="openCreateTripPrompt()">
+            <i class="fa-solid fa-plus"></i> Create a Trip
+          </button>
+          <button class="nav-pill-btn" onclick="exportItinerary()" id="btnExport" title="Export Itinerary">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i> Export
+          </button>
+          <button class="nav-pill-btn btn-nlp-toggle" onclick="toggleNlpDrawer()" title="View Academic NLP Inspector">
+            <i class="fa-solid fa-brain text-purple"></i> NLP Inspector
+          </button>
+          
+          <!-- Background Theme Switcher -->
+          <div class="theme-menu-container">
+            <button class="nav-pill-btn btn-theme-toggle" onclick="toggleThemeMenu()" id="btnThemeToggle" title="Change Background Theme">
+              <i class="fa-solid fa-palette text-orange"></i>
+              <span id="currentThemeName">Sunrise Aura</span>
+              <i class="fa-solid fa-chevron-down nav-chevron"></i>
+            </button>
+            <div class="theme-dropdown-menu" id="themeDropdownMenu">
+              <div class="theme-menu-header">Change Background</div>
+              <div class="theme-option active" onclick="selectTheme('sunrise')">
+                <span class="theme-dot dot-sunrise"></span>
+                <div class="theme-opt-text">
+                  <span class="theme-opt-title">Sunrise Aura</span>
+                  <span class="theme-opt-desc">Warm amber & purple travel glow</span>
+                </div>
+              </div>
+              <div class="theme-option" onclick="selectTheme('mountain')">
+                <span class="theme-dot dot-mountain"></span>
+                <div class="theme-opt-text">
+                  <span class="theme-opt-title">Mountain Mist</span>
+                  <span class="theme-opt-desc">Cool alpine sky & lavender breeze</span>
+                </div>
+              </div>
+              <div class="theme-option" onclick="selectTheme('sunset')">
+                <span class="theme-dot dot-sunset"></span>
+                <div class="theme-opt-text">
+                  <span class="theme-opt-title">Golden Sunset</span>
+                  <span class="theme-opt-desc">Soft rose & twilight golden glow</span>
+                </div>
+              </div>
+              <div class="theme-option" onclick="selectTheme('wallpaper')">
+                <span class="theme-dot dot-wallpaper"></span>
+                <div class="theme-opt-text">
+                  <span class="theme-opt-title">Scenic Wallpaper</span>
+                  <span class="theme-opt-desc">Frosted scenic mountain backdrop</span>
+                </div>
+              </div>
+              <div class="theme-option" onclick="selectTheme('dark')">
+                <span class="theme-dot dot-dark"></span>
+                <div class="theme-opt-text">
+                  <span class="theme-opt-title">Dark Luxe</span>
+                  <span class="theme-opt-desc">Deep night slate & glowing neon</span>
+                </div>
+              </div>
+              <div class="theme-option" onclick="selectTheme('minimal')">
+                <span class="theme-dot dot-minimal"></span>
+                <div class="theme-opt-text">
+                  <span class="theme-opt-title">Pure Minimal</span>
+                  <span class="theme-opt-desc">Crisp, clean neutral light background</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lang-dropdown">
+            <span class="flag-icon">🇺🇸</span>
+            <span>English</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+      </header>
+
+      <!-- Chat Stream Body -->
+      <div class="chat-scroll-stream" id="chatStream">
+        
+        <!-- Default Welcome Hero (Visible when chat is new) -->
+        <div class="welcome-hero-container" id="welcomeHero">
+          <div class="hero-brand-pill">
+            <img src="/static/images/logo.svg" alt="TripWise Logo" class="hero-brand-badge-img">
+            <span>TripWise &bull; AI Travel Planner</span>
+          </div>
+          <div class="hero-greetings">
+            <h2>Hey there, <span class="accent-name">Ronald</span></h2>
+            <h3>Where would you like to go?</h3>
+            <p class="hero-desc">I'm here to assist you in planning your experience. Ask me anything travel related.</p>
+          </div>
+
+          <!-- 3 Prompt Cards -->
+          <div class="hero-prompt-cards" id="heroPromptCards">
+            <!-- Card 1: Discover places -->
+            <div class="prompt-action-card" onclick="triggerPrompt('What are the best places to visit in Goa? Include beaches, culture, and cafes.')">
+              <div class="prompt-card-icon icon-orange">
+                <i class="fa-regular fa-compass"></i>
+              </div>
+              <div class="prompt-card-text">
+                <h4>Discover places to visit</h4>
+                <p>What's the best beach and scenic getaway in Goa? Include a comparison of north and south attractions.</p>
+              </div>
+            </div>
+
+            <!-- Card 2: Hotel Suggestions -->
+            <div class="prompt-action-card" onclick="triggerPrompt('Can you suggest good places to stay in Manali with mountain views and budget options?')">
+              <div class="prompt-card-icon icon-purple">
+                <i class="fa-solid fa-hotel"></i>
+              </div>
+              <div class="prompt-card-text">
+                <h4>Hotel Suggestions</h4>
+                <p>Can you show me a list of the best resorts and boutique stays in Manali, including ratings and price range?</p>
+              </div>
+            </div>
+
+            <!-- Card 3: Itinerary / Flights Planning -->
+            <div class="prompt-action-card" onclick="triggerPrompt('Plan a 4-day trip to Manali for 2 people with ₹20,000 budget. I like adventure and nature.')">
+              <div class="prompt-card-icon icon-teal">
+                <i class="fa-solid fa-plane-departure"></i>
+              </div>
+              <div class="prompt-card-text">
+                <h4>Itinerary & Trip Planning</h4>
+                <p>Plan a 4-day trip to Manali for 2 people with ₹20,000 budget. Include adventure sports and scenic nature.</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn-refresh-prompts" onclick="cyclePrompts()">
+            <i class="fa-solid fa-rotate"></i> Refresh Prompt
+          </button>
+
+          <!-- Interactive Travel Q&A Explorer -->
+          <div class="faq-explorer-box">
+            <div class="faq-explorer-header">
+              <i class="fa-solid fa-circle-question text-purple"></i>
+              <span>Common Travel Questions You Can Ask:</span>
+            </div>
+            <div class="faq-chips-grid">
+              <button class="faq-chip" onclick="triggerPrompt('What should I pack for Manali? Give me clothing and gear checklist.')">
+                🎒 What to pack for Manali?
+              </button>
+              <button class="faq-chip" onclick="triggerPrompt('Is Goa safe for solo female travelers? Give me safety tips.')">
+                🛡️ Is Goa safe for solo travelers?
+              </button>
+              <button class="faq-chip" onclick="triggerPrompt('How to reach Manali from Delhi? Give me transport options.')">
+                🚗 How to reach Manali from Delhi?
+              </button>
+              <button class="faq-chip" onclick="triggerPrompt('Best photography spots in Jaipur for sunrise and golden hour')">
+                📸 Best photo spots in Jaipur
+              </button>
+              <button class="faq-chip" onclick="triggerPrompt('What are the best things to buy in Jaipur and famous shopping markets?')">
+                🛍️ Top shopping & souvenirs in Jaipur
+              </button>
+              <button class="faq-chip" onclick="triggerPrompt('Where is the best nightlife in Goa? Top beach clubs and sunset lounges.')">
+                🎉 Nightlife & party spots in Goa
+              </button>
+              <button class="faq-chip" onclick="triggerPrompt('Is this trip suitable for kids and senior citizens?')">
+                👨‍👩‍👧 Traveling with kids & parents
+              </button>
+              <button class="faq-chip" onclick="triggerPrompt('How much does a 3-day trip to Goa cost?')">
+                💰 Budget estimate for 3 days
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Messages stream container -->
+        <div class="messages-container" id="messagesContainer"></div>
+
+      </div>
+
+      <!-- Typing Indicator -->
+      <div class="typing-indicator-row" id="typingIndicator" style="display: none;">
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+      </div>
+
+      <!-- Bottom Chat Input Area -->
+      <footer class="bottom-input-bar">
+        <!-- Floating Parameter Pill Chips -->
+        <div class="floating-chips-row">
+          <button class="chip-filter" onclick="appendInputPrefix('destination', 'to ')">
+            <i class="fa-solid fa-plus"></i> Where
+          </button>
+          <button class="chip-filter" onclick="appendInputPrefix('duration', 'for ')">
+            <i class="fa-solid fa-plus"></i> When
+          </button>
+          <button class="chip-filter" onclick="appendInputPrefix('travelers', 'for ')">
+            <i class="fa-solid fa-plus"></i> Travelers
+          </button>
+          <button class="chip-filter" onclick="appendInputPrefix('budget', 'under ₹')">
+            <i class="fa-solid fa-plus"></i> Budget
+          </button>
+        </div>
+
+        <!-- Chat Input Form -->
+        <form class="input-form-box" id="chatForm" onsubmit="handleFormSubmit(event)">
+          <textarea 
+            id="userInput" 
+            placeholder="Ask anything.." 
+            rows="1" 
+            onkeydown="handleTextareaKeydown(event)"
+          ></textarea>
+          
+          <div class="input-actions-bar">
+            <div class="actions-left">
+              <button type="button" class="btn-circle-action" title="Quick Options" onclick="openQuickOptions()">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+            <div class="actions-right">
+              <button type="button" class="btn-mic-wave" id="btnMic" title="Voice Input" onclick="toggleVoiceInput()">
+                <i class="fa-solid fa-bars-staggered"></i>
+              </button>
+              <button type="submit" class="btn-submit-arrow" id="btnSend" title="Send Message">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </footer>
+
+    </main>
+
+    <!-- RIGHT SIDEBAR: Trending & Inspiration -->
+    <aside class="sidebar-discovery">
+      
+      <!-- Trending Destinations Section -->
+      <div class="discovery-section">
+        <div class="section-title-row">
+          <h3>Trending Destinations</h3>
+          <button class="btn-explore-text" onclick="triggerPrompt('Suggest trending travel destinations in India')">Explore</button>
+        </div>
+        <div class="cards-grid-2col">
+          <!-- Trend 1: Manali -->
+          <div class="trend-card" onclick="triggerPrompt('Plan a 3-day trip to Manali for 2 people with budget 20000')">
+            <div class="trend-img-wrap">
+              <img src="/static/images/destinations/manali.jpg" alt="Manali Mountains" loading="lazy" onerror="this.onerror=null; this.src='/static/images/fallback.svg';">
+            </div>
+            <h4>Manali, Himachal</h4>
+          </div>
+          <!-- Trend 2: Goa -->
+          <div class="trend-card" onclick="triggerPrompt('Plan a 3-day trip to Goa under 15000 with beaches')">
+            <div class="trend-img-wrap">
+              <img src="/static/images/destinations/goa.jpg" alt="Goa Beaches" loading="lazy" onerror="this.onerror=null; this.src='/static/images/fallback.svg';">
+            </div>
+            <h4>Goa, Coastline</h4>
+          </div>
+          <!-- Trend 3: Agra -->
+          <div class="trend-card" onclick="triggerPrompt('Plan a 2-day heritage trip to Agra for Taj Mahal under 10000')">
+            <div class="trend-img-wrap">
+              <img src="/static/images/destinations/agra.jpg" alt="Agra Taj Mahal" loading="lazy" onerror="this.onerror=null; this.src='/static/images/fallback.svg';">
+            </div>
+            <h4>Agra, Taj Mahal</h4>
+          </div>
+          <!-- Trend 4: Varanasi -->
+          <div class="trend-card" onclick="triggerPrompt('Plan a 3-day spiritual trip to Varanasi with Ganga Aarti')">
+            <div class="trend-img-wrap">
+              <img src="/static/images/destinations/varanasi.jpg" alt="Varanasi Ghats" loading="lazy" onerror="this.onerror=null; this.src='/static/images/fallback.svg';">
+            </div>
+            <h4>Varanasi, Ghats</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inspiration Section -->
+      <div class="discovery-section inspiration-section">
+        <div class="section-title-row">
+          <h3>Get Inspiration for your next trip</h3>
+          <button class="btn-explore-text" onclick="triggerPrompt('Suggest romantic and adventure destinations')">Explore</button>
+        </div>
+        <div class="cards-grid-2col">
+          <!-- Card 1: Jaipur -->
+          <div class="inspiration-card" onclick="triggerPrompt('Plan a trip to Jaipur with heritage and royal palaces')">
+            <div class="inspire-img-wrap">
+              <img src="/static/images/destinations/jaipur.jpg" alt="Jaipur Palaces" loading="lazy" onerror="this.onerror=null; this.src='/static/images/fallback.svg';">
+            </div>
+            <h4>Royal Heritage in Jaipur</h4>
+            <p>Experience grand palaces, vibrant bazaars, and opulent culture...</p>
+          </div>
+          <!-- Card 2: Kerala -->
+          <div class="inspiration-card" onclick="triggerPrompt('Plan a relaxing 5-day vacation in Kerala with backwaters')">
+            <div class="inspire-img-wrap">
+              <img src="/static/images/destinations/kerala.jpg" alt="Kerala Backwaters" loading="lazy" onerror="this.onerror=null; this.src='/static/images/fallback.svg';">
+            </div>
+            <h4>Serene Kerala Backwaters</h4>
+            <p>Tranquil Alleppey houseboats, misty Munnar tea hills, and dining...</p>
+          </div>
+          <!-- Card 3: Darjeeling -->
+          <div class="inspiration-card" onclick="triggerPrompt('Plan a 4-day trip to Darjeeling with tea gardens and Tiger Hill sunrise')">
+            <div class="inspire-img-wrap">
+              <img src="/static/images/destinations/darjeeling.jpg" alt="Darjeeling Hills" loading="lazy" onerror="this.onerror=null; this.src='/static/images/fallback.svg';">
+            </div>
+            <h4>Darjeeling & Kanchenjunga</h4>
+            <p>Tiger Hill sunrise, UNESCO Himalayan toy train, and emerald tea slopes...</p>
+          </div>
+          <!-- Card 4: Rishikesh -->
+          <div class="inspiration-card" onclick="triggerPrompt('Plan a 4-day adventure trip to Rishikesh with river rafting and bungee')">
+            <div class="inspire-img-wrap">
+              <img src="/static/images/destinations/rishikesh.jpg" alt="Rishikesh River Rafting" loading="lazy" onerror="this.onerror=null; this.src='/static/images/fallback.svg';">
+            </div>
+            <h4>River Rafting in Rishikesh</h4>
+            <p>White-water river rapids, bungee jumping, and sacred Ganga Aarti...</p>
+          </div>
+          <!-- Card 5: Ladakh -->
+          <div class="inspiration-card" onclick="triggerPrompt('Plan a 6-day road trip to Ladakh with Pangong Lake')">
+            <div class="inspire-img-wrap">
+              <img src="/static/images/destinations/ladakh.jpg" alt="Ladakh Passes" loading="lazy" onerror="this.onerror=null; this.src='/static/images/fallback.svg';">
+            </div>
+            <h4>High Passes of Ladakh</h4>
+            <p>High mountain passes, azure Pangong Lake, and monasteries...</p>
+          </div>
+          <!-- Card 6: Udaipur -->
+          <div class="inspiration-card" onclick="triggerPrompt('Plan a 3-day romantic trip to Udaipur with lake boat ride')">
+            <div class="inspire-img-wrap">
+              <img src="/static/images/destinations/udaipur.jpg" alt="Udaipur Lake Palace" loading="lazy" onerror="this.onerror=null; this.src='/static/images/fallback.svg';">
+            </div>
+            <h4>City of Lakes, Udaipur</h4>
+            <p>Lake Pichola boat rides, majestic City Palace, and rooftop dining...</p>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+  </div>
+
+  <!-- SLIDE-OVER DRAWER: Academic NLP Inspector -->
+  <div class="nlp-drawer-backdrop" id="nlpDrawerBackdrop" onclick="toggleNlpDrawer(false)"></div>
+  <aside class="nlp-drawer" id="nlpDrawer">
+    <div class="nlp-drawer-header">
+      <div class="drawer-title-group">
+        <i class="fa-solid fa-brain text-purple"></i>
+        <h3>Academic NLP Inspector</h3>
+      </div>
+      <button class="btn-drawer-close" onclick="toggleNlpDrawer(false)">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="nlp-drawer-body">
+      <!-- Live Extracted Slots -->
+      <div class="drawer-section">
+        <h4 class="drawer-section-title"><i class="fa-solid fa-sliders"></i> Extracted Trip Parameters</h4>
+        <div class="slot-pills-grid">
+          <div class="slot-pill">
+            <span class="slot-tag">Destination</span>
+            <strong id="slotDest">Not specified</strong>
+          </div>
+          <div class="slot-pill">
+            <span class="slot-tag">Duration</span>
+            <strong id="slotDuration">Not specified</strong>
+          </div>
+          <div class="slot-pill">
+            <span class="slot-tag">Budget</span>
+            <strong id="slotBudget">Not specified</strong>
+          </div>
+          <div class="slot-pill">
+            <span class="slot-tag">Travelers</span>
+            <strong id="slotTravelers">1 Traveler</strong>
+          </div>
+          <div class="slot-pill">
+            <span class="slot-tag">Companions</span>
+            <strong id="slotTravelWith">Not specified</strong>
+          </div>
+          <div class="slot-pill">
+            <span class="slot-tag">Transport</span>
+            <strong id="slotTransport">Not specified</strong>
+          </div>
+          <div class="slot-pill">
+            <span class="slot-tag">Stay</span>
+            <strong id="slotAccommodation">Not specified</strong>
+          </div>
+          <div class="slot-pill" style="grid-column: span 2;">
+            <span class="slot-tag">Dialogue Stage</span>
+            <strong id="slotStage" style="color: #6366f1;">Collecting Details</strong>
+          </div>
+        </div>
+        <div class="slot-tags-row">
+          <span class="slot-tag">Interests:</span>
+          <div class="tag-pills" id="slotInterests">
+            <span class="tag-empty">None specified</span>
+          </div>
+        </div>
+        <div class="slot-tags-row" id="excludedContainer" style="display: none;">
+          <span class="slot-tag">Excluded:</span>
+          <div class="tag-pills" id="slotExcluded"></div>
+        </div>
+      </div>
+
+      <!-- Intent Classifier Card -->
+      <div class="drawer-section">
+        <div class="section-badge-row">
+          <h4 class="drawer-section-title"><i class="fa-solid fa-bullseye"></i> Intent Classification</h4>
+          <span class="confidence-tag" id="nlpConf">0.0%</span>
+        </div>
+        <div class="intent-display-badge" id="nlpIntent">Awaiting query...</div>
+        <div class="conf-meter-track">
+          <div class="conf-meter-bar" id="nlpConfBar" style="width: 0%;"></div>
+        </div>
+        <div class="top-intents-table" id="nlpTopIntents"></div>
+      </div>
+
+      <!-- Preprocessing & Tokenization -->
+      <div class="drawer-section">
+        <div class="section-badge-row">
+          <h4 class="drawer-section-title"><i class="fa-solid fa-filter"></i> NLP Preprocessing</h4>
+          <span class="token-count-tag" id="nlpTokenCount">0 tokens</span>
+        </div>
+        <div class="token-block">
+          <label>Cleaned Tokens:</label>
+          <div class="tokens-wrap" id="nlpCleanTokens">
+            <span class="token-empty">No query processed yet</span>
+          </div>
+        </div>
+        <div class="token-block">
+          <label>Filtered Stopwords Removed:</label>
+          <div class="tokens-wrap" id="nlpStopwords">
+            <span class="token-empty">None</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TF-IDF Vector Weights -->
+      <div class="drawer-section">
+        <h4 class="drawer-section-title"><i class="fa-solid fa-chart-simple"></i> TF-IDF Vector Weights</h4>
+        <div class="tfidf-list" id="nlpTfidf">
+          <span class="token-empty">No active TF-IDF weights</span>
+        </div>
+      </div>
+
+      <!-- JSON Raw Trace -->
+      <div class="drawer-section">
+        <h4 class="drawer-section-title"><i class="fa-solid fa-code"></i> Extracted Slots (JSON)</h4>
+        <pre class="json-code-box" id="nlpJson">{}</pre>
+      </div>
+    </div>
+  </aside>
+
+  <script src="/static/js/script.js"></script>
+</body>
+</html>

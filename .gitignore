@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pyw
+*.pyz
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Environment variables (NEVER commit secrets)
+.env
+.env.*
+*.env
+
+# Model files (large binary files - optional to exclude)
+# Uncomment below to exclude trained models from the repo:
+# model/*.pkl
+
+# IDE / Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Flask session/cache
+flask_session/
+instance/
+
+# Logs
+*.log
+logs/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/

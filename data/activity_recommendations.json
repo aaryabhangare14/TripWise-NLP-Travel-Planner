@@ -1,0 +1,1951 @@
+{
+  "activities": [
+    {
+      "activity": "river_rafting",
+      "display_name": "River Rafting",
+      "icon": "🌊",
+      "category": "adventure",
+      "keywords": [
+        "rafting",
+        "river rafting",
+        "white water rafting",
+        "whitewater rafting",
+        "water rafting",
+        "river raft",
+        "rafting trip"
+      ],
+      "destinations": [
+        {
+          "name": "Rishikesh",
+          "state": "Uttarakhand",
+          "description": "World-famous for thrilling white-water rafting on the holy Ganges River with Grade III-IV rapids.",
+          "best_for": [
+            "Adventure",
+            "Rafting",
+            "Cliff Jumping",
+            "Beach Camping"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 8000,
+          "near_cities": [
+            "Delhi",
+            "Dehradun",
+            "Chandigarh",
+            "Haridwar"
+          ],
+          "best_season": "September to June"
+        },
+        {
+          "name": "Kolad",
+          "state": "Maharashtra",
+          "description": "Popular for year-round white-water rafting on the high-speed Kundalika River dam releases.",
+          "best_for": [
+            "Short adventure trips",
+            "Kundalika rafting",
+            "Weekend getaways"
+          ],
+          "duration": "1–2 days",
+          "ideal_days": 1,
+          "avg_cost_per_person": 3500,
+          "near_cities": [
+            "Mumbai",
+            "Pune",
+            "Navi Mumbai",
+            "Thane",
+            "Lonavala"
+          ],
+          "best_season": "June to March (Monsoon is best)"
+        },
+        {
+          "name": "Manali",
+          "state": "Himachal Pradesh",
+          "description": "Rafting on the scenic Beas River alongside snow-capped Himalayan ridges and pine forests.",
+          "best_for": [
+            "Adventure",
+            "Mountains",
+            "River sports"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 4,
+          "avg_cost_per_person": 12000,
+          "near_cities": [
+            "Chandigarh",
+            "Delhi",
+            "Kullu"
+          ],
+          "best_season": "April to July, September to October"
+        },
+        {
+          "name": "Dandeli",
+          "state": "Karnataka",
+          "description": "Known for Kali River rafting, hornbill spotting, and lush Western Ghats adventure tourism.",
+          "best_for": [
+            "Adventure",
+            "Nature",
+            "River rafting",
+            "Jungle stay"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 7500,
+          "near_cities": [
+            "Bangalore",
+            "Goa",
+            "Pune",
+            "Hyderabad",
+            "Hubli"
+          ],
+          "best_season": "October to May"
+        },
+        {
+          "name": "Zanskar",
+          "state": "Ladakh",
+          "description": "High-altitude gorge expedition rafting through dramatic canyons and icy Himalayan meltwater.",
+          "best_for": [
+            "Extreme adventure",
+            "Expedition rafting",
+            "Wilderness"
+          ],
+          "duration": "5–7 days",
+          "ideal_days": 6,
+          "avg_cost_per_person": 25000,
+          "near_cities": [
+            "Leh",
+            "Srinagar"
+          ],
+          "best_season": "July to August"
+        }
+      ]
+    },
+    {
+      "activity": "trekking",
+      "display_name": "Trekking & Hiking",
+      "icon": "🥾",
+      "category": "adventure",
+      "keywords": [
+        "trekking",
+        "trek",
+        "hiking",
+        "hike",
+        "mountain trekking",
+        "mountain hike",
+        "trails",
+        "backpacking"
+      ],
+      "destinations": [
+        {
+          "name": "Manali",
+          "state": "Himachal Pradesh",
+          "description": "Gateway to iconic Himalayan treks like Hampta Pass, Bhrigu Lake, and Beas Kund.",
+          "best_for": [
+            "Alpine meadows",
+            "Glacial lakes",
+            "High passes"
+          ],
+          "duration": "4–5 days",
+          "ideal_days": 4,
+          "avg_cost_per_person": 11000,
+          "near_cities": [
+            "Chandigarh",
+            "Delhi"
+          ],
+          "best_season": "May to October"
+        },
+        {
+          "name": "Kasol",
+          "state": "Himachal Pradesh",
+          "description": "Basecamp for legendary Parvati Valley treks including Kheerganga, Grahan, and Sar Pass.",
+          "best_for": [
+            "Hot springs",
+            "Pine forests",
+            "Backpacking"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 6500,
+          "near_cities": [
+            "Chandigarh",
+            "Delhi",
+            "Kullu"
+          ],
+          "best_season": "March to June, September to November"
+        },
+        {
+          "name": "Munnar",
+          "state": "Kerala",
+          "description": "Rolling tea garden ridges and trekking trails to Anamudi Peak and Meesapulimala.",
+          "best_for": [
+            "Cloud beds",
+            "Tea plantation trails",
+            "Scenic views"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 9000,
+          "near_cities": [
+            "Kochi",
+            "Ernakulam",
+            "Madurai",
+            "Coimbatore"
+          ],
+          "best_season": "September to March"
+        },
+        {
+          "name": "Leh-Ladakh",
+          "state": "Ladakh",
+          "description": "Spectacular high-altitude desert trails including Markha Valley and Chadar frozen river trek.",
+          "best_for": [
+            "High mountain passes",
+            "Monasteries",
+            "Barren beauty"
+          ],
+          "duration": "6–8 days",
+          "ideal_days": 7,
+          "avg_cost_per_person": 28000,
+          "near_cities": [
+            "Leh",
+            "Srinagar",
+            "Delhi"
+          ],
+          "best_season": "June to September"
+        },
+        {
+          "name": "Rishikesh & Garhwal",
+          "state": "Uttarakhand",
+          "description": "Base for world-renowned Himalayan trails like Valley of Flowers, Kedarkantha, and Kuari Pass.",
+          "best_for": [
+            "Snow trekking",
+            "Alpine flora",
+            "Spiritual peaks"
+          ],
+          "duration": "4–6 days",
+          "ideal_days": 5,
+          "avg_cost_per_person": 12500,
+          "near_cities": [
+            "Delhi",
+            "Dehradun",
+            "Haridwar"
+          ],
+          "best_season": "October to April (Snow) / July-Aug (Flowers)"
+        },
+        {
+          "name": "Darjeeling",
+          "state": "West Bengal",
+          "description": "Home to the famous Sandakphu trek offering sweeping views of four 8,000m peaks including Everest & Kanchenjunga.",
+          "best_for": [
+            "Himalayan panoramas",
+            "Rhododendron forests",
+            "Ridge walking"
+          ],
+          "duration": "4–5 days",
+          "ideal_days": 4,
+          "avg_cost_per_person": 12000,
+          "near_cities": [
+            "Siliguri",
+            "Kolkata",
+            "Bagdogra"
+          ],
+          "best_season": "October to December, March to May"
+        }
+      ]
+    },
+    {
+      "activity": "scuba_diving",
+      "display_name": "Scuba Diving",
+      "icon": "🤿",
+      "category": "water_sports",
+      "keywords": [
+        "scuba diving",
+        "scuba",
+        "deep sea diving",
+        "diving",
+        "scuba dive"
+      ],
+      "destinations": [
+        {
+          "name": "Andaman and Nicobar Islands",
+          "state": "Andaman and Nicobar",
+          "description": "India's premier diving destination with crystal-clear waters, vibrant coral reefs, and sea turtles at Havelock.",
+          "best_for": [
+            "PADI certifications",
+            "Coral walls",
+            "Marine biodiversity"
+          ],
+          "duration": "5–6 days",
+          "ideal_days": 5,
+          "avg_cost_per_person": 28000,
+          "near_cities": [
+            "Port Blair",
+            "Chennai",
+            "Kolkata"
+          ],
+          "best_season": "November to April"
+        },
+        {
+          "name": "Goa",
+          "state": "Goa",
+          "description": "Accessible scuba diving at Grande Island and Netrani transit featuring shipwrecks and exotic reef fish.",
+          "best_for": [
+            "Beginner diving",
+            "Island boat trips",
+            "Affordable packages"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 12000,
+          "near_cities": [
+            "Mumbai",
+            "Pune",
+            "Bangalore",
+            "Goa"
+          ],
+          "best_season": "October to May"
+        },
+        {
+          "name": "Lakshadweep",
+          "state": "Lakshadweep",
+          "description": "Untouched turquoise lagoons and pristine coral atolls at Agatti and Bangaram with mantas and reef sharks.",
+          "best_for": [
+            "Pristine visibility",
+            "Untouched atolls",
+            "Luxury diving"
+          ],
+          "duration": "4–6 days",
+          "ideal_days": 5,
+          "avg_cost_per_person": 32000,
+          "near_cities": [
+            "Kochi",
+            "Ernakulam"
+          ],
+          "best_season": "October to mid-May"
+        },
+        {
+          "name": "Netrani Island (Murudeshwar)",
+          "state": "Karnataka",
+          "description": "Known as 'Pigeon Island', offering superb 15-30m visibility, whale shark sightings, and coral gardens.",
+          "best_for": [
+            "Deep sea marine life",
+            "High underwater visibility"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 8500,
+          "near_cities": [
+            "Bangalore",
+            "Goa",
+            "Mangalore",
+            "Pune"
+          ],
+          "best_season": "October to May"
+        },
+        {
+          "name": "Malvan & Tarkarli",
+          "state": "Maharashtra",
+          "description": "Budget-friendly coastal diving around Sindhudurg Fort with clear shallow waters and vibrant coastal reefs.",
+          "best_for": [
+            "Budget scuba",
+            "Fort exploration",
+            "Konkan coastal cuisine"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 6000,
+          "near_cities": [
+            "Mumbai",
+            "Pune",
+            "Goa",
+            "Kolhapur"
+          ],
+          "best_season": "October to April"
+        }
+      ]
+    },
+    {
+      "activity": "paragliding",
+      "display_name": "Paragliding",
+      "icon": "🪂",
+      "category": "adventure",
+      "keywords": [
+        "paragliding",
+        "paraglide",
+        "glide",
+        "tandem paragliding",
+        "gliding"
+      ],
+      "destinations": [
+        {
+          "name": "Bir Billing",
+          "state": "Himachal Pradesh",
+          "description": "World Cup venue and the paragliding capital of India with world-class thermals and Dhauladhar views.",
+          "best_for": [
+            "World-class tandem glides",
+            "Cafes & monasteries",
+            "Sunset landings"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 8500,
+          "near_cities": [
+            "Dharamshala",
+            "Chandigarh",
+            "Delhi"
+          ],
+          "best_season": "September to November, March to May"
+        },
+        {
+          "name": "Manali (Solang Valley)",
+          "state": "Himachal Pradesh",
+          "description": "Scenic high-altitude glides taking off from Solang Valley and Dobhi over apple orchards and pine valleys.",
+          "best_for": [
+            "Snow mountain backdrop",
+            "Easy accessibility",
+            "Combo adventure"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 11000,
+          "near_cities": [
+            "Chandigarh",
+            "Delhi"
+          ],
+          "best_season": "April to June, September to November"
+        },
+        {
+          "name": "Kamshet",
+          "state": "Maharashtra",
+          "description": "India's premier paragliding training hub with gentle thermals overlooking Pavana Lake and Western Ghats.",
+          "best_for": [
+            "Weekend flights from Mumbai/Pune",
+            "Pilot training courses",
+            "Lake views"
+          ],
+          "duration": "1–2 days",
+          "ideal_days": 1,
+          "avg_cost_per_person": 4500,
+          "near_cities": [
+            "Mumbai",
+            "Pune",
+            "Lonavala",
+            "Navi Mumbai",
+            "Thane"
+          ],
+          "best_season": "October to May"
+        },
+        {
+          "name": "Vagamon",
+          "state": "Kerala",
+          "description": "Lush green rolling tea meadows and misty hilltops offering serene paragliding across Idukki hills.",
+          "best_for": [
+            "Cool mountain breeze",
+            "Misty valley glides",
+            "Quiet nature"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 7000,
+          "near_cities": [
+            "Kochi",
+            "Kottayam",
+            "Madurai"
+          ],
+          "best_season": "September to February"
+        }
+      ]
+    },
+    {
+      "activity": "skiing",
+      "display_name": "Skiing & Snowboarding",
+      "icon": "⛷️",
+      "category": "snow_sports",
+      "keywords": [
+        "skiing",
+        "ski",
+        "snowboarding",
+        "snow ski",
+        "snow sport",
+        "snow sports"
+      ],
+      "destinations": [
+        {
+          "name": "Gulmarg",
+          "state": "Jammu and Kashmir",
+          "description": "Asia's premier ski resort featuring the world's second highest Gondola, deep powder snow, and Apharwat Peak runs.",
+          "best_for": [
+            "Powder snow",
+            "Gondola cable car",
+            "Professional & beginner slopes"
+          ],
+          "duration": "4–6 days",
+          "ideal_days": 5,
+          "avg_cost_per_person": 22000,
+          "near_cities": [
+            "Srinagar",
+            "Jammu",
+            "Delhi"
+          ],
+          "best_season": "December to mid-March"
+        },
+        {
+          "name": "Auli",
+          "state": "Uttarakhand",
+          "description": "Pristine white slopes surrounded by 7,000m Himalayan peaks including Nanda Devi, with modern chairlifts.",
+          "best_for": [
+            "Himalayan vistas",
+            "Curated ski courses",
+            "Ropeway rides"
+          ],
+          "duration": "3–5 days",
+          "ideal_days": 4,
+          "avg_cost_per_person": 16000,
+          "near_cities": [
+            "Dehradun",
+            "Rishikesh",
+            "Delhi"
+          ],
+          "best_season": "Late December to March"
+        },
+        {
+          "name": "Solang Valley (Manali)",
+          "state": "Himachal Pradesh",
+          "description": "Accessible winter wonderland offering beginner ski training, snowmobiling, and tube slides.",
+          "best_for": [
+            "Beginner ski lessons",
+            "Family snow fun",
+            "Winter activities"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 12000,
+          "near_cities": [
+            "Chandigarh",
+            "Delhi"
+          ],
+          "best_season": "December to February"
+        }
+      ]
+    },
+    {
+      "activity": "wildlife_safari",
+      "display_name": "Wildlife Safari",
+      "icon": "🐅",
+      "category": "wildlife",
+      "keywords": [
+        "wildlife safari",
+        "jungle safari",
+        "tiger safari",
+        "safari",
+        "wildlife",
+        "national park",
+        "tiger reserve"
+      ],
+      "destinations": [
+        {
+          "name": "Jim Corbett National Park",
+          "state": "Uttarakhand",
+          "description": "India's oldest national park renowned for Royal Bengal Tigers, wild elephant herds, and Dhikala safari zones.",
+          "best_for": [
+            "Jeep & canter safaris",
+            "Riverside jungle lodges",
+            "Birdwatching"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 9500,
+          "near_cities": [
+            "Delhi",
+            "Dehradun",
+            "Nainital"
+          ],
+          "best_season": "November to June"
+        },
+        {
+          "name": "Ranthambore",
+          "state": "Rajasthan",
+          "description": "Iconic tiger reserve where majestic tigers roam amidst 10th-century fort ruins and ancient banyan trees.",
+          "best_for": [
+            "Tiger sightings",
+            "Heritage fort backdrop",
+            "Luxury wildlife camps"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 10500,
+          "near_cities": [
+            "Jaipur",
+            "Delhi",
+            "Agra",
+            "Kota"
+          ],
+          "best_season": "October to April"
+        },
+        {
+          "name": "Kanha National Park",
+          "state": "Madhya Pradesh",
+          "description": "The lush sal forest inspiration for Kipling's Jungle Book, harboring tigers, leopards, and rare barasingha.",
+          "best_for": [
+            "Dense sal forests",
+            "Barasingha deer",
+            "Pristine core zones"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 12000,
+          "near_cities": [
+            "Jabalpur",
+            "Nagpur",
+            "Raipur"
+          ],
+          "best_season": "October to May"
+        },
+        {
+          "name": "Tadoba Andhari Tiger Reserve",
+          "state": "Maharashtra",
+          "description": "The 'Jewel of Vidarbha' famous for highest tiger density and consistent year-round big cat sightings.",
+          "best_for": [
+            "High tiger probability",
+            "Open gypsy safaris",
+            "Central India access"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 8500,
+          "near_cities": [
+            "Nagpur",
+            "Pune",
+            "Mumbai",
+            "Hyderabad"
+          ],
+          "best_season": "October to June"
+        },
+        {
+          "name": "Kaziranga National Park",
+          "state": "Assam",
+          "description": "UNESCO World Heritage site home to two-thirds of the world's great one-horned rhinoceros population.",
+          "best_for": [
+            "One-horned rhinos",
+            "Elephant back safari",
+            "Brahmaputra floodplains"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 13000,
+          "near_cities": [
+            "Guwahati",
+            "Jorhat",
+            "Kolkata"
+          ],
+          "best_season": "November to April"
+        },
+        {
+          "name": "Periyar Tiger Reserve",
+          "state": "Kerala",
+          "description": "Picturesque wildlife sanctuary offering boat cruises on Lake Periyar to view wild elephants and bison.",
+          "best_for": [
+            "Lake boat safari",
+            "Elephant herds",
+            "Spice plantation tours"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 8000,
+          "near_cities": [
+            "Kochi",
+            "Madurai",
+            "Munnar"
+          ],
+          "best_season": "September to May"
+        }
+      ]
+    },
+    {
+      "activity": "camping",
+      "display_name": "Camping & Bonfire",
+      "icon": "⛺",
+      "category": "adventure",
+      "keywords": [
+        "camping",
+        "camp",
+        "tent stay",
+        "bonfire camping",
+        "glamping",
+        "stargazing"
+      ],
+      "destinations": [
+        {
+          "name": "Rishikesh",
+          "state": "Uttarakhand",
+          "description": "Riverside white-sand beach camps and jungle valley camps with evening bonfires and acoustic music.",
+          "best_for": [
+            "Riverside tents",
+            "Bonfire nights",
+            "Combo rafting & camping"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 6000,
+          "near_cities": [
+            "Delhi",
+            "Dehradun",
+            "Chandigarh"
+          ],
+          "best_season": "September to June"
+        },
+        {
+          "name": "Lonavala & Pawna Lake",
+          "state": "Maharashtra",
+          "description": "Lakeside tent camping under the stars with live BBQ, bonfire, and acoustic guitar by the water.",
+          "best_for": [
+            "Weekend trips from Mumbai/Pune",
+            "Lakeside stargazing",
+            "BBQ & music"
+          ],
+          "duration": "1–2 days",
+          "ideal_days": 1,
+          "avg_cost_per_person": 3000,
+          "near_cities": [
+            "Mumbai",
+            "Pune",
+            "Navi Mumbai",
+            "Thane"
+          ],
+          "best_season": "October to May"
+        },
+        {
+          "name": "Kasol",
+          "state": "Himachal Pradesh",
+          "description": "Riverside camping alongside the roaring Parvati River under towering Himalayan pines.",
+          "best_for": [
+            "Parvati riverbanks",
+            "Bohemian cafes",
+            "Starry mountain skies"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 5500,
+          "near_cities": [
+            "Chandigarh",
+            "Delhi"
+          ],
+          "best_season": "April to June, September to November"
+        },
+        {
+          "name": "Jaisalmer",
+          "state": "Rajasthan",
+          "description": "Magical desert glamping on the Thar dunes with camel safari, folk Kalbelia dances, and sunset.",
+          "best_for": [
+            "Desert luxury tents",
+            "Cultural folk performances",
+            "Dune safaris"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 7500,
+          "near_cities": [
+            "Jodhpur",
+            "Jaipur",
+            "Delhi"
+          ],
+          "best_season": "October to March"
+        },
+        {
+          "name": "Pangong Lake & Nubra",
+          "state": "Ladakh",
+          "description": "High-altitude luxury dome tents beside the cobalt-blue Pangong Lake under Milky Way night skies.",
+          "best_for": [
+            "Unmatched stargazing",
+            "Milky Way photography",
+            "Himalayan wilderness"
+          ],
+          "duration": "5–6 days",
+          "ideal_days": 5,
+          "avg_cost_per_person": 22000,
+          "near_cities": [
+            "Leh",
+            "Delhi"
+          ],
+          "best_season": "May to September"
+        }
+      ]
+    },
+    {
+      "activity": "snorkeling",
+      "display_name": "Snorkeling",
+      "icon": "🤿",
+      "category": "water_sports",
+      "keywords": [
+        "snorkeling",
+        "snorkel",
+        "shallow diving",
+        "reef snorkeling"
+      ],
+      "destinations": [
+        {
+          "name": "Elephant Beach (Havelock, Andaman)",
+          "state": "Andaman and Nicobar",
+          "description": "Crystal shallow reef waters teeming with clownfish, parrotfish, and sea anemones right off the shore.",
+          "best_for": [
+            "Coral gardens",
+            "Vibrant tropical marine life",
+            "Boat excursions"
+          ],
+          "duration": "4–5 days",
+          "ideal_days": 4,
+          "avg_cost_per_person": 24000,
+          "near_cities": [
+            "Port Blair",
+            "Chennai",
+            "Kolkata"
+          ],
+          "best_season": "October to April"
+        },
+        {
+          "name": "Grande Island, Goa",
+          "state": "Goa",
+          "description": "Popular day-trip boat cruise offering guided snorkeling, dolphin watching, and beach barbecue.",
+          "best_for": [
+            "Day boat trip",
+            "Beginner snorkeling",
+            "Family friendly"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 9000,
+          "near_cities": [
+            "Mumbai",
+            "Pune",
+            "Bangalore"
+          ],
+          "best_season": "October to May"
+        },
+        {
+          "name": "Bangaram Island",
+          "state": "Lakshadweep",
+          "description": "Tear-drop shaped coral atoll with transparent turquoise lagoons ideal for swimming with stingrays and turtles.",
+          "best_for": [
+            "Pristine lagoons",
+            "Coral reefs",
+            "Tranquil beaches"
+          ],
+          "duration": "4–5 days",
+          "ideal_days": 4,
+          "avg_cost_per_person": 29000,
+          "near_cities": [
+            "Kochi"
+          ],
+          "best_season": "October to May"
+        },
+        {
+          "name": "Tarkarli",
+          "state": "Maharashtra",
+          "description": "Clear coastal waters with shallow coral beds around the historic Sindhudurg Fort ramparts.",
+          "best_for": [
+            "Affordable snorkeling",
+            "Coastal getaway near Mumbai/Pune"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 5500,
+          "near_cities": [
+            "Mumbai",
+            "Pune",
+            "Goa"
+          ],
+          "best_season": "October to April"
+        }
+      ]
+    },
+    {
+      "activity": "bungee_jumping",
+      "display_name": "Bungee Jumping",
+      "icon": "⚡",
+      "category": "adventure",
+      "keywords": [
+        "bungee jumping",
+        "bungy jumping",
+        "bungee jump",
+        "bungee"
+      ],
+      "destinations": [
+        {
+          "name": "Rishikesh (Mohan Chatti)",
+          "state": "Uttarakhand",
+          "description": "India's highest fixed-platform bungee jump (83 meters) operated by certified Kiwi jump masters over the Hall River.",
+          "best_for": [
+            "India's highest bungee",
+            "International safety standards",
+            "Giant swing & flying fox"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 8500,
+          "near_cities": [
+            "Delhi",
+            "Dehradun",
+            "Chandigarh"
+          ],
+          "best_season": "September to June"
+        },
+        {
+          "name": "Goa (Mayem Lake)",
+          "state": "Goa",
+          "description": "Exciting 55-meter bungee jump over the scenic waters of Mayem Lake in North Goa.",
+          "best_for": [
+            "Water-touch bungee",
+            "Combine with beach vacation"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 11000,
+          "near_cities": [
+            "Mumbai",
+            "Pune",
+            "Bangalore"
+          ],
+          "best_season": "October to May"
+        },
+        {
+          "name": "Lonavala (Della Adventure)",
+          "state": "Maharashtra",
+          "description": "45-meter platform bungee jump at Della Adventure Park with scenic Sahyadri backdrop.",
+          "best_for": [
+            "Day trip from Mumbai & Pune",
+            "Weekend thrill seekers"
+          ],
+          "duration": "1–2 days",
+          "ideal_days": 1,
+          "avg_cost_per_person": 5000,
+          "near_cities": [
+            "Mumbai",
+            "Pune",
+            "Navi Mumbai",
+            "Thane"
+          ],
+          "best_season": "Year-round"
+        }
+      ]
+    },
+    {
+      "activity": "surfing",
+      "display_name": "Surfing",
+      "icon": "🏄",
+      "category": "water_sports",
+      "keywords": [
+        "surfing",
+        "surf",
+        "kite surfing",
+        "wind surfing",
+        "surf school"
+      ],
+      "destinations": [
+        {
+          "name": "Goa (Arambol & Ashwem)",
+          "state": "Goa",
+          "description": "Gentle rolling beach breaks and ISA-certified surf schools ideal for beginners and longboarders.",
+          "best_for": [
+            "Beginner surf lessons",
+            "Bohemian beach lifestyle",
+            "Sunset surf"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 10000,
+          "near_cities": [
+            "Mumbai",
+            "Pune",
+            "Bangalore"
+          ],
+          "best_season": "November to April"
+        },
+        {
+          "name": "Varkala",
+          "state": "Kerala",
+          "description": "Spectacular red-cliff backed beaches with consistent Arabian Sea swell and laid-back surf cafes.",
+          "best_for": [
+            "Consistent reef and beach breaks",
+            "Cliff-top cafes",
+            "Yoga and surf combos"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 9500,
+          "near_cities": [
+            "Trivandrum",
+            "Kochi",
+            "Madurai"
+          ],
+          "best_season": "October to March"
+        },
+        {
+          "name": "Mulki (Mantra Surf Club)",
+          "state": "Karnataka",
+          "description": "The birthplace of Indian surfing at the Shambhavi River estuary with uncrowded warm-water breaks.",
+          "best_for": [
+            "India's premier surf retreat",
+            "River stand-up paddleboarding",
+            "Dedicated surf camps"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 8500,
+          "near_cities": [
+            "Mangalore",
+            "Bangalore",
+            "Goa"
+          ],
+          "best_season": "September to May"
+        }
+      ]
+    },
+    {
+      "activity": "kayaking",
+      "display_name": "Kayaking & Canoeing",
+      "icon": "🛶",
+      "category": "water_sports",
+      "keywords": [
+        "kayaking",
+        "kayak",
+        "canoeing",
+        "canoe",
+        "paddling"
+      ],
+      "destinations": [
+        {
+          "name": "Alleppey",
+          "state": "Kerala",
+          "description": "Quiet paddling through narrow lotus-filled village canals and palm-fringed backwaters unreachable by houseboats.",
+          "best_for": [
+            "Village life exploration",
+            "Serene backwaters",
+            "Sunrise paddling"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 7500,
+          "near_cities": [
+            "Kochi",
+            "Ernakulam",
+            "Trivandrum"
+          ],
+          "best_season": "September to March"
+        },
+        {
+          "name": "Rishikesh",
+          "state": "Uttarakhand",
+          "description": "White-water kayaking courses on the Ganges ranging from calm pool paddling to Grade III rapid negotiation.",
+          "best_for": [
+            "Whitewater kayak schools",
+            "River balance training"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 9000,
+          "near_cities": [
+            "Delhi",
+            "Dehradun",
+            "Chandigarh"
+          ],
+          "best_season": "October to April"
+        },
+        {
+          "name": "Goa (Sal & Chapora Backwaters)",
+          "state": "Goa",
+          "description": "Serene mangrove kayaking through dense bird sanctuaries and tranquil estuarine waterways.",
+          "best_for": [
+            "Mangrove trails",
+            "Birdwatching",
+            "Sunset paddles"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 6500,
+          "near_cities": [
+            "Mumbai",
+            "Pune",
+            "Bangalore"
+          ],
+          "best_season": "October to May"
+        }
+      ]
+    },
+    {
+      "activity": "rock_climbing",
+      "display_name": "Rock Climbing & Bouldering",
+      "icon": "🧗",
+      "category": "adventure",
+      "keywords": [
+        "rock climbing",
+        "climbing",
+        "bouldering",
+        "rappelling",
+        "crag"
+      ],
+      "destinations": [
+        {
+          "name": "Hampi",
+          "state": "Karnataka",
+          "description": "The bouldering Mecca of India with endless surreal granite boulder fields beside ancient Vijaynagara ruins.",
+          "best_for": [
+            "World-famous bouldering",
+            "Hippie island cafes",
+            "Heritage landscape"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 7000,
+          "near_cities": [
+            "Bangalore",
+            "Goa",
+            "Hyderabad",
+            "Pune"
+          ],
+          "best_season": "November to February"
+        },
+        {
+          "name": "Badami",
+          "state": "Karnataka",
+          "description": "Spectacular red sandstone cliffs offering world-class sport climbing routes and traditional cave temples.",
+          "best_for": [
+            "Sandstone multi-pitch routes",
+            "Heritage caves",
+            "Pro sport climbing"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 6500,
+          "near_cities": [
+            "Goa",
+            "Bangalore",
+            "Hubli",
+            "Pune"
+          ],
+          "best_season": "October to March"
+        },
+        {
+          "name": "Manali",
+          "state": "Himachal Pradesh",
+          "description": "Granite rock climbing and bouldering at Aleo and Vashisht with certified mountain guides.",
+          "best_for": [
+            "Mountain rock craft",
+            "Alpine granite",
+            "Climbing courses"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 9500,
+          "near_cities": [
+            "Chandigarh",
+            "Delhi"
+          ],
+          "best_season": "April to June, September to October"
+        }
+      ]
+    },
+    {
+      "activity": "ziplining",
+      "display_name": "Ziplining & Aerial Adventure",
+      "icon": "🦅",
+      "category": "adventure",
+      "keywords": [
+        "ziplining",
+        "zipline",
+        "zip line",
+        "flying fox",
+        "aerial adventure"
+      ],
+      "destinations": [
+        {
+          "name": "Rishikesh",
+          "state": "Uttarakhand",
+          "description": "Exhilarating 400-meter flying fox tandem flight soaring 70 meters directly above the white-water rapids of the Ganges.",
+          "best_for": [
+            "Soaring over the Ganges",
+            "Tandem flights",
+            "High speed adrenaline"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 7500,
+          "near_cities": [
+            "Delhi",
+            "Dehradun",
+            "Chandigarh"
+          ],
+          "best_season": "September to June"
+        },
+        {
+          "name": "Jodhpur (Mehrangarh Fort)",
+          "state": "Rajasthan",
+          "description": "Flying Fox aerial tour glides across six ziplines over the ramparts, lakes, and moats of the majestic Mehrangarh Fort.",
+          "best_for": [
+            "Fort aerial views",
+            "Blue city panoramic vistas",
+            "Heritage zipline"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 8500,
+          "near_cities": [
+            "Jaipur",
+            "Udaipur",
+            "Delhi"
+          ],
+          "best_season": "October to March"
+        },
+        {
+          "name": "Neemrana Fort",
+          "state": "Rajasthan",
+          "description": "5-zipline circuit traversing 15th-century palace walls and rugged Aravalli hills just 2 hours from Delhi.",
+          "best_for": [
+            "Weekend trip from Delhi/NCR",
+            "Heritage palace views"
+          ],
+          "duration": "1–2 days",
+          "ideal_days": 1,
+          "avg_cost_per_person": 4500,
+          "near_cities": [
+            "Delhi",
+            "Gurgaon",
+            "Jaipur"
+          ],
+          "best_season": "October to March"
+        }
+      ]
+    },
+    {
+      "activity": "beach_activities",
+      "display_name": "Beach & Coastal Holidays",
+      "icon": "🏖️",
+      "category": "relaxation",
+      "keywords": [
+        "beach activities",
+        "beach holiday",
+        "beach trip",
+        "beaches",
+        "beach hopping",
+        "sunbathing",
+        "beach vacation"
+      ],
+      "destinations": [
+        {
+          "name": "Goa",
+          "state": "Goa",
+          "description": "Golden shores from lively Baga & Calangute to peaceful Palolem and Morjim, packed with beach shacks and water sports.",
+          "best_for": [
+            "Water sports",
+            "Beach shacks",
+            "Sunset parties",
+            "Coastal cuisine"
+          ],
+          "duration": "3–5 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 10500,
+          "near_cities": [
+            "Mumbai",
+            "Pune",
+            "Bangalore"
+          ],
+          "best_season": "November to February"
+        },
+        {
+          "name": "Varkala & Kovalam",
+          "state": "Kerala",
+          "description": "Dramatic cliffside beach walkways, lighthouse panoramas, and world-class Ayurvedic seaside wellness.",
+          "best_for": [
+            "Red cliffs",
+            "Lighthouse beaches",
+            "Ayurvedic massage"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 9500,
+          "near_cities": [
+            "Trivandrum",
+            "Kochi",
+            "Madurai"
+          ],
+          "best_season": "September to March"
+        },
+        {
+          "name": "Gokarna",
+          "state": "Karnataka",
+          "description": "Tranquil secluded beaches like Om Beach, Kudle, and Half Moon linked by rugged cliffside walking trails.",
+          "best_for": [
+            "Serene beaches",
+            "Cliff hiking between bays",
+            "Laid-back vibe"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 6500,
+          "near_cities": [
+            "Goa",
+            "Bangalore",
+            "Mangalore",
+            "Pune"
+          ],
+          "best_season": "October to March"
+        },
+        {
+          "name": "Andaman Islands (Radhanagar Beach)",
+          "state": "Andaman and Nicobar",
+          "description": "Voted Asia's best beach, famous for powder-soft white sand, turquoise surf, and dramatic sunset skies.",
+          "best_for": [
+            "Pristine tropical beauty",
+            "White sands",
+            "Romantic getaways"
+          ],
+          "duration": "5–6 days",
+          "ideal_days": 5,
+          "avg_cost_per_person": 26000,
+          "near_cities": [
+            "Port Blair",
+            "Chennai",
+            "Kolkata"
+          ],
+          "best_season": "October to May"
+        }
+      ]
+    },
+    {
+      "activity": "historical_sightseeing",
+      "display_name": "Historical & Heritage Sightseeing",
+      "icon": "🏰",
+      "category": "heritage",
+      "keywords": [
+        "historical sightseeing",
+        "heritage",
+        "historical spots",
+        "heritage tour",
+        "monuments",
+        "palaces",
+        "forts",
+        "sightseeing",
+        "history"
+      ],
+      "destinations": [
+        {
+          "name": "Jaipur",
+          "state": "Rajasthan",
+          "description": "The Royal Pink City famed for Amber Fort, Hawa Mahal honeycomb facade, City Palace, and Jantar Mantar observatory.",
+          "best_for": [
+            "Royal palaces",
+            "Majestic forts",
+            "Mughal & Rajput architecture"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 8500,
+          "near_cities": [
+            "Delhi",
+            "Agra",
+            "Ajmer",
+            "Udaipur"
+          ],
+          "best_season": "October to March"
+        },
+        {
+          "name": "Agra",
+          "state": "Uttar Pradesh",
+          "description": "Home to the world wonder Taj Mahal, grand red-sandstone Agra Fort, and the abandoned royal city of Fatehpur Sikri.",
+          "best_for": [
+            "World wonder Taj Mahal",
+            "Mughal empire history",
+            "Pietra dura art"
+          ],
+          "duration": "1–2 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 5000,
+          "near_cities": [
+            "Delhi",
+            "Jaipur",
+            "Lucknow",
+            "Gwalior"
+          ],
+          "best_season": "October to March"
+        },
+        {
+          "name": "Udaipur",
+          "state": "Rajasthan",
+          "description": "The Venice of the East with majestic Lake Pichola, historic City Palace, Jag Mandir, and Bagore Ki Haveli.",
+          "best_for": [
+            "Lakeside palaces",
+            "Royal romance",
+            "Courtyards & museums"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 9600,
+          "near_cities": [
+            "Ahmedabad",
+            "Jaipur",
+            "Jodhpur",
+            "Mumbai"
+          ],
+          "best_season": "October to March"
+        },
+        {
+          "name": "Varanasi",
+          "state": "Uttar Pradesh",
+          "description": "One of the world's oldest living cities, celebrated for ancient stone ghats, Kashi Vishwanath temple, and nearby Sarnath Buddhist stupas.",
+          "best_for": [
+            "Living history",
+            "Ancient ghats",
+            "Buddhist heritage at Sarnath"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 6600,
+          "near_cities": [
+            "Lucknow",
+            "Prayagraj",
+            "Patna",
+            "Delhi"
+          ],
+          "best_season": "October to March"
+        }
+      ]
+    },
+    {
+      "activity": "pilgrimage",
+      "display_name": "Pilgrimage & Spirituality",
+      "icon": "🕉️",
+      "category": "spirituality",
+      "keywords": [
+        "pilgrimage",
+        "spiritual tour",
+        "spiritual",
+        "temples",
+        "ghats",
+        "aarti",
+        "ashrams",
+        "holy places",
+        "religious trip"
+      ],
+      "destinations": [
+        {
+          "name": "Varanasi",
+          "state": "Uttar Pradesh",
+          "description": "Spiritual epicenter of India with mesmerizing evening Ganga Aarti at Dashashwamedh, sacred Manikarnika Ghat, and Kashi Vishwanath.",
+          "best_for": [
+            "Ganga Aarti",
+            "Holy dips",
+            "Meditation & rituals"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 6600,
+          "near_cities": [
+            "Lucknow",
+            "Prayagraj",
+            "Patna",
+            "Delhi"
+          ],
+          "best_season": "October to March"
+        },
+        {
+          "name": "Rishikesh & Haridwar",
+          "state": "Uttarakhand",
+          "description": "The yoga capital of the world with sacred Har Ki Pauri Ganga Aarti, Parmarth Niketan, and peaceful riverside ashrams.",
+          "best_for": [
+            "Yoga & meditation",
+            "Har Ki Pauri aarti",
+            "Ashram stays"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 6500,
+          "near_cities": [
+            "Delhi",
+            "Dehradun",
+            "Chandigarh"
+          ],
+          "best_season": "September to May"
+        },
+        {
+          "name": "Amritsar",
+          "state": "Punjab",
+          "description": "Home to the revered Golden Temple (Harmandir Sahib), serene holy sarovar waters, and world's largest community kitchen (Langar).",
+          "best_for": [
+            "Golden Temple",
+            "Sacred atmosphere",
+            "Community langar"
+          ],
+          "duration": "2 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 5500,
+          "near_cities": [
+            "Chandigarh",
+            "Delhi",
+            "Jalandhar"
+          ],
+          "best_season": "October to March"
+        }
+      ]
+    },
+    {
+      "activity": "adventure_sports",
+      "display_name": "Adventure Sports",
+      "icon": "🧗",
+      "category": "adventure",
+      "keywords": [
+        "adventure",
+        "adventure sports",
+        "outdoor adventure",
+        "thrill",
+        "extreme sports",
+        "adventure activities",
+        "adventure trip",
+        "adventures"
+      ],
+      "destinations": [
+        {
+          "name": "Rishikesh",
+          "state": "Uttarakhand",
+          "description": "The adventure capital of India, renowned for white-water river rafting on the Ganges, bungee jumping, and cliff diving.",
+          "best_for": [
+            "River Rafting",
+            "Bungee Jumping",
+            "Cliff Jumping",
+            "Flying Fox"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 8000,
+          "near_cities": [
+            "Delhi",
+            "Dehradun",
+            "Chandigarh",
+            "Haridwar"
+          ],
+          "best_season": "September to June"
+        },
+        {
+          "name": "Manali",
+          "state": "Himachal Pradesh",
+          "description": "Himalayan adventure hotspot offering high-altitude paragliding at Solang Valley, river rafting on the Beas, and mountain trekking.",
+          "best_for": [
+            "Paragliding",
+            "River Rafting",
+            "Hampta Pass Trek",
+            "Ziplining"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 4,
+          "avg_cost_per_person": 12000,
+          "near_cities": [
+            "Chandigarh",
+            "Delhi",
+            "Kullu"
+          ],
+          "best_season": "April to July, September to November"
+        },
+        {
+          "name": "Ladakh",
+          "state": "Ladakh",
+          "description": "Ultimate extreme terrain destination for high-altitude motorbiking across Khardung La, river rafting in Zanskar canyon, and trekking.",
+          "best_for": [
+            "High-Pass Biking",
+            "Zanskar Rafting",
+            "Chadar Winter Trek",
+            "Wilderness"
+          ],
+          "duration": "6–7 days",
+          "ideal_days": 6,
+          "avg_cost_per_person": 26000,
+          "near_cities": [
+            "Leh",
+            "Srinagar",
+            "Manali"
+          ],
+          "best_season": "June to September"
+        },
+        {
+          "name": "Dandeli",
+          "state": "Karnataka",
+          "description": "Western Ghats adventure hub famous for Kali River rafting, jungle safaris, rock climbing, and natural jacuzzi rapids.",
+          "best_for": [
+            "Kali River Rafting",
+            "Kayaking",
+            "Jungle Trekking",
+            "Wildlife Safaris"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 7500,
+          "near_cities": [
+            "Bangalore",
+            "Goa",
+            "Pune",
+            "Hyderabad",
+            "Hubli"
+          ],
+          "best_season": "October to May"
+        },
+        {
+          "name": "Goa",
+          "state": "Goa",
+          "description": "Coastal watersports haven for scuba diving at Grand Island, parasailing, jet skiing, banana boat rides, and surfing.",
+          "best_for": [
+            "Scuba Diving",
+            "Parasailing",
+            "Jet Skiing",
+            "Speedboat Rides"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 11000,
+          "near_cities": [
+            "Mumbai",
+            "Pune",
+            "Bangalore"
+          ],
+          "best_season": "October to April"
+        }
+      ]
+    },
+    {
+      "activity": "nature_and_mountains",
+      "display_name": "Nature & Mountains",
+      "icon": "🏔️",
+      "category": "nature",
+      "keywords": [
+        "nature",
+        "mountains",
+        "mountain",
+        "hills",
+        "hill station",
+        "scenic",
+        "valleys",
+        "waterfalls",
+        "greenery",
+        "nature trip"
+      ],
+      "destinations": [
+        {
+          "name": "Manali",
+          "state": "Himachal Pradesh",
+          "description": "Breathtaking snow-draped Pir Panjal peaks, aromatic pine forests, Jogini waterfalls, and the spectacular Rohtang Pass.",
+          "best_for": [
+            "Snow-capped peaks",
+            "Scenic valleys",
+            "Pine forests",
+            "Rohtang Pass"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 4,
+          "avg_cost_per_person": 11500,
+          "near_cities": [
+            "Chandigarh",
+            "Delhi"
+          ],
+          "best_season": "Year-round (Summer for greenery, Winter for snow)"
+        },
+        {
+          "name": "Ooty",
+          "state": "Tamil Nadu",
+          "description": "The Queen of Hill Stations in the Nilgiris, blessed with rolling emerald tea gardens, Pykara Lake, and misty viewpoints.",
+          "best_for": [
+            "Nilgiri tea estates",
+            "Botanical gardens",
+            "Pykara waterfalls",
+            "Toy train"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 8500,
+          "near_cities": [
+            "Bangalore",
+            "Coimbatore",
+            "Mysore",
+            "Chennai"
+          ],
+          "best_season": "October to June"
+        },
+        {
+          "name": "Darjeeling",
+          "state": "West Bengal",
+          "description": "Mesmerizing views of the world's third highest peak Mount Kanchenjunga, world-famous orthodox tea plantations, and Tiger Hill sunrise.",
+          "best_for": [
+            "Kanchenjunga sunrise",
+            "Heritage tea gardens",
+            "Peace Pagoda",
+            "Himalayan views"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 9500,
+          "near_cities": [
+            "Kolkata",
+            "Siliguri",
+            "Guwahati"
+          ],
+          "best_season": "March to May, October to December"
+        },
+        {
+          "name": "Kerala",
+          "state": "Kerala",
+          "description": "God's Own Country with the misty tea hills of Munnar, wildlife sanctuaries of Thekkady, and peaceful palm backwaters of Alleppey.",
+          "best_for": [
+            "Munnar tea plantations",
+            "Athirappilly waterfalls",
+            "Periyar wildlife",
+            "Scenic backwaters"
+          ],
+          "duration": "4–5 days",
+          "ideal_days": 4,
+          "avg_cost_per_person": 14000,
+          "near_cities": [
+            "Kochi",
+            "Bangalore",
+            "Chennai",
+            "Coimbatore"
+          ],
+          "best_season": "September to March"
+        },
+        {
+          "name": "Ladakh",
+          "state": "Ladakh",
+          "description": "Stunning high-altitude cold desert with crystal clear azure waters at Pangong Tso and the sand dunes of Nubra Valley.",
+          "best_for": [
+            "Pangong Tso Lake",
+            "Nubra Valley",
+            "Magnetic Hill",
+            "Stark Himalayan beauty"
+          ],
+          "duration": "5–6 days",
+          "ideal_days": 5,
+          "avg_cost_per_person": 22000,
+          "near_cities": [
+            "Leh",
+            "Srinagar"
+          ],
+          "best_season": "May to September"
+        }
+      ]
+    },
+    {
+      "activity": "relaxation_and_wellness",
+      "display_name": "Relaxation & Wellness",
+      "icon": "🧘",
+      "category": "relaxation",
+      "keywords": [
+        "relaxation",
+        "relax",
+        "relaxing",
+        "peaceful",
+        "peace",
+        "wellness",
+        "spa",
+        "chill",
+        "serene",
+        "quiet",
+        "calm",
+        "peace of mind"
+      ],
+      "destinations": [
+        {
+          "name": "Kerala",
+          "state": "Kerala",
+          "description": "World-renowned Ayurvedic healing and wellness rejuvenation with luxury houseboat cruises drifting along Alleppey's quiet backwaters.",
+          "best_for": [
+            "Ayurvedic massages",
+            "Backwater houseboats",
+            "Marari beach tranquility",
+            "Yoga"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 4,
+          "avg_cost_per_person": 13500,
+          "near_cities": [
+            "Kochi",
+            "Bangalore",
+            "Chennai"
+          ],
+          "best_season": "September to March"
+        },
+        {
+          "name": "Ooty",
+          "state": "Tamil Nadu",
+          "description": "Soothing mountain breezes, cozy colonial-era tea bungalows, leisurely boat rides, and serene lake strolls away from city rush.",
+          "best_for": [
+            "Tea estate serenity",
+            "Ooty Lake boating",
+            "Misty mountain mornings",
+            "Cozy stays"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 8000,
+          "near_cities": [
+            "Bangalore",
+            "Coimbatore",
+            "Mysore"
+          ],
+          "best_season": "September to May"
+        },
+        {
+          "name": "Udaipur",
+          "state": "Rajasthan",
+          "description": "Peaceful lake breezes, sunset boat rides on Lake Pichola, rooftop cafes, and tranquil heritage courtyard retreats.",
+          "best_for": [
+            "Lake Pichola boat rides",
+            "Saheliyon Ki Bari gardens",
+            "Peaceful rooftop dining",
+            "Palace views"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 9500,
+          "near_cities": [
+            "Ahmedabad",
+            "Jaipur",
+            "Mumbai"
+          ],
+          "best_season": "October to March"
+        },
+        {
+          "name": "Rishikesh",
+          "state": "Uttarakhand",
+          "description": "Global Yoga & Meditation Capital with serene Ganga riverside ashrams, sound healing, evening chants, and herbal wellness centers.",
+          "best_for": [
+            "Riverside meditation",
+            "Yoga retreats",
+            "Parmarth Niketan aarti",
+            "Sound healing"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 7000,
+          "near_cities": [
+            "Delhi",
+            "Dehradun",
+            "Chandigarh"
+          ],
+          "best_season": "September to April"
+        },
+        {
+          "name": "Goa",
+          "state": "Goa",
+          "description": "Tranquil South Goa beaches including Palolem, Agonda, and Benaulim, offering beachside yoga, sunset walks, and cozy seaside shacks.",
+          "best_for": [
+            "Agonda sunset walks",
+            "Palolem beach serenity",
+            "Beachside yoga",
+            "Seafood shacks"
+          ],
+          "duration": "3–4 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 10500,
+          "near_cities": [
+            "Mumbai",
+            "Pune",
+            "Bangalore"
+          ],
+          "best_season": "October to April"
+        }
+      ]
+    },
+    {
+      "activity": "heritage_and_culture",
+      "display_name": "Heritage & Culture",
+      "icon": "🏰",
+      "category": "heritage",
+      "keywords": [
+        "heritage",
+        "culture",
+        "cultural",
+        "history",
+        "historical",
+        "palaces",
+        "forts",
+        "monuments",
+        "historical places",
+        "heritage tour"
+      ],
+      "destinations": [
+        {
+          "name": "Jaipur",
+          "state": "Rajasthan",
+          "description": "The Pink City featuring majestic Amber Fort, Hawa Mahal, City Palace museum, and world-famous Rajasthani artisanal culture.",
+          "best_for": [
+            "Amber Fort",
+            "Hawa Mahal",
+            "Royal City Palace",
+            "Traditional bazaars"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 7800,
+          "near_cities": [
+            "Delhi",
+            "Agra",
+            "Udaipur"
+          ],
+          "best_season": "October to March"
+        },
+        {
+          "name": "Agra",
+          "state": "Uttar Pradesh",
+          "description": "Home to the iconic white-marble Taj Mahal, red sandstone Agra Fort, and the abandoned Mughal capital of Fatehpur Sikri.",
+          "best_for": [
+            "Taj Mahal",
+            "Agra Fort",
+            "Fatehpur Sikri",
+            "Mughal architecture"
+          ],
+          "duration": "1–2 days",
+          "ideal_days": 2,
+          "avg_cost_per_person": 5000,
+          "near_cities": [
+            "Delhi",
+            "Jaipur",
+            "Lucknow"
+          ],
+          "best_season": "October to March"
+        },
+        {
+          "name": "Udaipur",
+          "state": "Rajasthan",
+          "description": "Grand City Palace overlooking Lake Pichola, historic Jag Mandir, Bagore Ki Haveli folk museum, and royal Mewar heritage.",
+          "best_for": [
+            "City Palace museum",
+            "Dharohar folk dance",
+            "Jag Mandir palace",
+            "Monsoon Palace"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 9600,
+          "near_cities": [
+            "Ahmedabad",
+            "Jaipur",
+            "Jodhpur"
+          ],
+          "best_season": "October to March"
+        },
+        {
+          "name": "Varanasi",
+          "state": "Uttar Pradesh",
+          "description": "One of the world's oldest continually inhabited cities with timeless Ganga ghats, Kashi Vishwanath temple, and ancient Buddhist Sarnath.",
+          "best_for": [
+            "Ancient stone ghats",
+            "Ganga Aarti",
+            "Kashi Vishwanath",
+            "Sarnath Buddhist stupas"
+          ],
+          "duration": "2–3 days",
+          "ideal_days": 3,
+          "avg_cost_per_person": 6600,
+          "near_cities": [
+            "Lucknow",
+            "Prayagraj",
+            "Patna",
+            "Delhi"
+          ],
+          "best_season": "October to March"
+        }
+      ]
+    }
+  ]
+}

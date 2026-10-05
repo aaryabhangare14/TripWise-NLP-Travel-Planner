@@ -1,0 +1,136 @@
+{
+  "destinations": [
+    {
+      "id": "goa",
+      "name": "Goa",
+      "state": "Goa",
+      "tagline": "Sun, Sand, and Sea",
+      "best_season": "November to February",
+      "ideal_days": 3,
+      "avg_daily_cost_per_person": 3500,
+      "popular_interests": ["beach", "nightlife", "water sports", "heritage", "food"],
+      "weather_summary": "Tropical climate with sunny beaches. Pleasant winter (22-30°C) and lush monsoon.",
+      "description": "Goa is India's premier beach paradise, famous for golden shores, Portuguese architecture, vibrant beach shacks, and exhilarating water sports."
+    },
+    {
+      "id": "manali",
+      "name": "Manali",
+      "state": "Himachal Pradesh",
+      "tagline": "Valley of the Gods & Snow Peaks",
+      "best_season": "October to June (Snow in Dec-Feb)",
+      "ideal_days": 4,
+      "avg_daily_cost_per_person": 3000,
+      "popular_interests": ["adventure", "nature", "mountains", "snow", "relaxation"],
+      "weather_summary": "Cool alpine climate. Summer is pleasant (10-25°C) and winter experiences magical snowfall (-2 to 10°C).",
+      "description": "Nestled in the Himalayas, Manali offers breathtaking mountain vistas, Solang valley adventure sports, hot springs, and tranquil pine forests."
+    },
+    {
+      "id": "kerala",
+      "name": "Kerala",
+      "state": "Kerala",
+      "tagline": "God's Own Country",
+      "best_season": "September to March",
+      "ideal_days": 5,
+      "avg_daily_cost_per_person": 3800,
+      "popular_interests": ["nature", "backwaters", "relaxation", "tea gardens", "food"],
+      "weather_summary": "Humid maritime climate with misty cool hills in Munnar (15-22°C) and tropical backwaters.",
+      "description": "Renowned for Alleppey backwater houseboats, Munnar's rolling emerald tea estates, spice plantations, and serene Ayurvedic wellness."
+    },
+    {
+      "id": "jaipur",
+      "name": "Jaipur",
+      "state": "Rajasthan",
+      "tagline": "The Royal Pink City",
+      "best_season": "October to March",
+      "ideal_days": 3,
+      "avg_daily_cost_per_person": 2800,
+      "popular_interests": ["heritage", "culture", "architecture", "food", "shopping"],
+      "weather_summary": "Semi-arid climate with warm sunny winter days (15-25°C) and cool royal evenings.",
+      "description": "A UNESCO World Heritage city famed for magnificent Amber Fort, Hawa Mahal, vibrant bazaars, and opulent Rajasthani culinary heritage."
+    },
+    {
+      "id": "ladakh",
+      "name": "Ladakh",
+      "state": "Ladakh",
+      "tagline": "Land of High Mountain Passes",
+      "best_season": "May to September",
+      "ideal_days": 6,
+      "avg_daily_cost_per_person": 5000,
+      "popular_interests": ["adventure", "mountains", "nature", "culture", "road trip"],
+      "weather_summary": "High altitude cold desert with crystal clear blue skies and crisp mountain breeze.",
+      "description": "A surreal paradise of cobalt-blue Pangong Lake, dramatic moonscapes, Buddhist monasteries, and the world's highest motorable roads."
+    },
+    {
+      "id": "rishikesh",
+      "name": "Rishikesh",
+      "state": "Uttarakhand",
+      "tagline": "Yoga Capital & White-Water Rafting",
+      "best_season": "September to May",
+      "ideal_days": 3,
+      "avg_daily_cost_per_person": 2200,
+      "popular_interests": ["adventure", "spirituality", "nature", "wellness", "river"],
+      "weather_summary": "Pleasant Himalayan foothills climate with refreshing Ganga river breeze.",
+      "description": "Perched beside the holy Ganges, Rishikesh is world-renowned for thrilling river rafting, bungee jumping, peaceful ashrams, and the Beatles Cafe."
+    },
+    {
+      "id": "ooty",
+      "name": "Ooty",
+      "state": "Tamil Nadu",
+      "tagline": "Queen of the Nilgiri Hills",
+      "best_season": "October to June",
+      "ideal_days": 3,
+      "avg_daily_cost_per_person": 2600,
+      "popular_interests": ["nature", "relaxation", "mountains", "tea gardens", "family"],
+      "weather_summary": "Salubrious cool climate year-round with misty morning fog and aromatic eucalyptus breeze.",
+      "description": "A charming colonial-era hill retreat featuring historic Toy Train rides, Botanical Gardens, Doddabetta Peak, and handmade chocolates."
+    },
+    {
+      "id": "udaipur",
+      "name": "Udaipur",
+      "state": "Rajasthan",
+      "tagline": "City of Lakes & Royal Romance",
+      "best_season": "October to March",
+      "ideal_days": 3,
+      "avg_daily_cost_per_person": 3200,
+      "popular_interests": ["heritage", "romance", "culture", "lakes", "food"],
+      "weather_summary": "Pleasant winter weather with shimmering lake waters and golden sunset vistas.",
+      "description": "Celebrated for Lake Pichola boat rides, majestic City Palace, rooftop candlelight dining, and timeless royal Rajput heritage."
+    },
+    {
+      "id": "agra",
+      "name": "Agra",
+      "state": "Uttar Pradesh",
+      "tagline": "City of the Taj Mahal & Mughal Splendor",
+      "best_season": "October to March",
+      "ideal_days": 2,
+      "avg_daily_cost_per_person": 2500,
+      "popular_interests": ["heritage", "architecture", "monuments", "culture", "food"],
+      "weather_summary": "Crisp sunny winter days (12-24°C) ideal for heritage photography and marble monuments.",
+      "description": "Home to the world wonder Taj Mahal, grand Agra Fort, and Mehtab Bagh sunset vistas along the Yamuna river."
+    },
+    {
+      "id": "varanasi",
+      "name": "Varanasi",
+      "state": "Uttar Pradesh",
+      "tagline": "Spiritual Capital & Ghats of the Ganges",
+      "best_season": "October to March",
+      "ideal_days": 3,
+      "avg_daily_cost_per_person": 2200,
+      "popular_interests": ["spirituality", "culture", "heritage", "river", "food"],
+      "weather_summary": "Cool, pleasant winter breeze across the Ganges with misty spiritual sunrises.",
+      "description": "One of the world's oldest living cities, celebrated for hypnotic Ganga Aarti at Dashashwamedh Ghat, Kashi Vishwanath temple, and Banarasi silk."
+    },
+    {
+      "id": "darjeeling",
+      "name": "Darjeeling",
+      "state": "West Bengal",
+      "tagline": "Queen of the Hills & Kanchenjunga Vistas",
+      "best_season": "March to May, October to December",
+      "ideal_days": 4,
+      "avg_daily_cost_per_person": 3000,
+      "popular_interests": ["mountains", "tea gardens", "nature", "heritage", "relaxation"],
+      "weather_summary": "Pleasant temperate climate with breathtaking views of snow-capped Mt. Kanchenjunga.",
+      "description": "World-famous for aromatic Darjeeling tea plantations, Tiger Hill sunrise, UNESCO Himalayan Toy Train, and colonial charm."
+    }
+  ]
+}
